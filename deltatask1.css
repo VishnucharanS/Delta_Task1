@@ -47,14 +47,15 @@ body{
 #rules{
     width: 150px;
     height: 100px;
-    background-color: rgb(17, 155, 17);
-    opacity: 0.85;
+    background-color:rgb(1, 1, 56); color: white;
     box-shadow: 0 5px#666;
     text-align: center;
-    border-radius: 5cm;
+    border-radius: 0.5cm;
     font-size: 20px;
+    opacity: 0.90;
 }
 #rules:hover{
+    background-color:white;  color: rgb(1, 1, 56);
     opacity: 0.95;
 }
 #rules:active{
