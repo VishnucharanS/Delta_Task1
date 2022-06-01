@@ -38,8 +38,26 @@ button:active{
     opacity: 1;
 }
 body{
-    background-image: url('keyboard.jpg'), linear-gradient(rgba(0, 0, 187,1),rgba(0, 0, 187,.99),rgba(0, 0, 187,0.98),rgba(0, 0, 187,0.95),rgba(211,0,0,0.50), rgba(211, 0, 0, 1));
+    background-image: url('keyboard.jpg'), linear-gradient(rgba(0, 0, 187,1),rgba(0, 0, 187,.99),rgba(0, 0, 187,0.98),rgba(0, 0, 187,0.95),rgba(211,0,0,0.5), rgba(211, 0, 0, 1));
     background-repeat: no-repeat,repeat;
     background-size: 100%,cover;
     background-attachment: scroll;
+    text-align: center;
+}
+#rules{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(17, 155, 17);
+    opacity: 0.85;
+    box-shadow: 0 5px#666;
+    text-align: center;
+    border-radius: 5cm;
+    font-size: 20px;
+}
+#rules:hover{
+    opacity: 0.95;
+}
+#rules:active{
+    box-shadow: 0 2px #999;
+    opacity: 1;
 }
