@@ -1,0 +1,45 @@
+#Heading {
+    text-align:center; 
+    color:rgb(172, 3, 3); 
+    border:5px solid rgb(0, 1, 7);
+    font-size: 200%;
+    background-color: rgba(2,3,4,0.7);
+    font-family: georgia;
+}
+.intro{
+    margin: auto;
+    border-radius: 2cm;
+    width: 200px;
+    height: 200px;
+}
+button{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    transition: 0.5s;
+    opacity: 0.75;
+    box-shadow: 0 5px #666;
+    cursor:pointer;
+
+}
+.light{
+    background-color:white;  color: rgb(1, 1, 56)
+}
+.dark{
+    background-color:rgb(1, 1, 56); color: white;
+    font-family: cursive;
+    font-size: 20px;
+}
+button:hover{
+    opacity: 0.9;   
+}
+button:active{
+    box-shadow: 0 1px #999;
+    opacity: 1;
+}
+body{
+    background-image: url('keyboard.jpg'), linear-gradient(rgba(0, 0, 187,1),rgba(0, 0, 187,.99),rgba(0, 0, 187,0.98),rgba(0, 0, 187,0.95),rgba(211,0,0,0.75), rgba(211, 0, 0, 1));
+    background-repeat: no-repeat,repeat;
+    background-size: 100%,cover;
+    background-attachment: scroll;
+}
