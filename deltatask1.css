@@ -24,6 +24,8 @@ button{
 }
 .light{
     background-color:white;  color: rgb(1, 1, 56)
+    font-family: cursive;
+    font-size: 20px;
 }
 .dark{
     background-color:rgb(1, 1, 56); color: white;
@@ -61,4 +63,7 @@ body{
 #rules:active{
     box-shadow: 0 2px #999;
     opacity: 1;
+}
+#level{
+    display:hidden;
 }
