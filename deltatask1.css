@@ -13,8 +13,8 @@
     height: 200px;
 }
 button{
-    width: 150px;
-    height: 150px;
+    width: 200px ;
+    height: 200px;
     border-radius: 20px;
     transition: 0.5s;
     opacity: 0.75;
@@ -45,6 +45,7 @@ body{
     background-size: 100%,cover;
     background-attachment: scroll;
     text-align: center;
+    background-
 }
 #rules{
     width: 150px;
@@ -65,5 +66,5 @@ body{
     opacity: 1;
 }
 #level{
-    display:hidden;
+    display:none;
 }
