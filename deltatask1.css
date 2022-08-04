@@ -67,10 +67,10 @@ button{
     background-color:rgb(1, 1, 56);
     opacity: 0.8;
 }*/
-.light1:active{
+/*.light1:active{
     background-color: rgb(1, 1, 56);
     opacity: 1;
-}
+}*/
 .dark{
     background-color:rgb(1, 1, 56); color: white;
     font-family: 'Special Elite', cursive;
@@ -107,6 +107,8 @@ body{
     border-radius: 0.5cm;
     font-size: 20px;
     opacity: 0.90;
+    font-family: 'Special Elite', cursive;
+    font-size: 30px;
 }
 #rules:hover{
     background-color:white;  color: rgb(1, 1, 56);

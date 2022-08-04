@@ -44,13 +44,13 @@ function glowlist(){
 function game(clic){
   scores()
   document.getElementById("start").style.display= "none";
-  if (lst1.length===0){
+  if (lst2.length===16 && lst3.length===0){
     for (i=0;i<17;i++){
       document.getElementById("g4"+i).classList.add("right")
     }
     aud2.play()
     setTimeout(function(){
-      if (confirm("Woww!!!!!! You've finished it\nWant to play again?")) {
+      if (confirm("Woww!!!!!! You've finished it\nWanna play again?")) {
         document.getElementById("4x4").style.display="grid";
         document.getElementById("start").style.display="inline";
         document.getElementById("score").style.display="none";
@@ -72,7 +72,8 @@ function game(clic){
       lst3[i] = lst2[i]
     }
     for (let j = 0; j < lst2.length; j++){
-      blackglow(lst2[j]); 
+      var ide= lst2[j]
+      setTimeout(blackglow(ide),250); 
     } 
   }
   else if (lst3.length != 0){
