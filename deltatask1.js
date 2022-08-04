@@ -33,8 +33,8 @@ function timeout(){
   location.reload()
 }
 function blackglow(someid){
-  document.getElementById("g4"+someid).classList.add("glowon");
-  setTimeout(function(){document.getElementById("g4"+someid).classList.remove("glowon")},750);
+  setTimeout(function(){document.getElementById("g4"+someid).classList.add("glowon")},800);
+  setTimeout(function(){document.getElementById("g4"+someid).classList.remove("glowon")},1800);
 }
 function glowlist(){
   lst2.push(lst1[0]);
@@ -45,13 +45,13 @@ function game(clic){
   document.getElementById("start").style.display= "none";
   if (lst3.length === 0){
     if (lst2.length===16){
-      for (i=0;i<17;i++){
-        setTimeout(function(){document.getElementById("g4"+i).classList.add("right")},0);
+      for (let i=1;i<17;i++){
+      document.getElementById("g4"+i).classList.add("right")
       }
       aud2.play();
       setTimeout(function(){
         if (confirm("Woww!!!!!! You've finished it\nWanna play again?")){
-          for (i=0;i<17;i++){
+          for (let i=1;i<17;i++){
             document.getElementById("g4"+i).classList.remove("right")
           }
           document.getElementById("4x4").style.display="grid";
@@ -66,10 +66,10 @@ function game(clic){
         else {
           location.reload();
         }
-        },4000);
+        },8000);
     }
     glowlist()
-    for (i = 0; i<lst2.length; i++){
+    for (let i = 0; i<lst2.length; i++){
       lst3[i] = lst2[i]
     }
     for (let j = 0; j < lst2.length; j++){
