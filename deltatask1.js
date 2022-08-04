@@ -49,10 +49,10 @@ function game(clic){
     }
     aud2.play();
     setTimeout(function(){
-      if (confirm("Woww!!!!!! You've finished it\nWanna play again?")) {
-        for (let i=0;i<lst.length;i++){
-          setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("wrong")},0);
-          setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("right")},0);}
+      if (confirm("Woww!!!!!! You've finished it\nWanna play again?")){
+        for (i=0;i<17;i++){
+          document.getElementById("g4"+i).classList.remove("right")
+        }
         document.getElementById("4x4").style.display="grid";
         document.getElementById("start").style.display="inline";
         document.getElementById("score").style.display="none";
@@ -63,9 +63,6 @@ function game(clic){
         randomnes()
       } 
       else {
-        for (let i=0;i<lst.length;i++){
-          setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("wrong")},0);
-          setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("right")},0);}
         location.reload();
       }
       },4000);
@@ -108,9 +105,7 @@ function game(clic){
       aud1.play();
       setTimeout(function(){
       if (confirm("Want to retry?")) {
-        for (let i=0;i<lst.length;i++){
           setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("wrong")},0);
-          setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("right")},0);}
         document.getElementById("4x4").style.display="grid";
         document.getElementById("start").style.display="inline";
         document.getElementById("score").style.display="none";
@@ -121,9 +116,6 @@ function game(clic){
         randomnes()
       } 
       else {
-        for (let i=0;i<lst.length;i++){
-        setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("wrong")},0);
-        setTimeout(function(){document.getElementById("g4"+lst[i]).classList.remove("right")},0);}
         location.reload();
       }
     },3000);
