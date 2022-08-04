@@ -2,6 +2,7 @@
     text-align:center; 
     color:rgb(172, 3, 3); 
     border:5px solid rgb(0, 1, 7);
+    max-height: 150px;
     font-size: 500%;
     background-color: rgba(2,3,4,0.7);
     font-family: 'Mouse Memoirs', cursive;
@@ -74,6 +75,13 @@ button{
     background-color:rgb(1, 1, 56); color: white;
     font-family: 'Special Elite', cursive;
     font-size: 30px;
+}   
+.start{
+    background-color:rgb(1, 1, 56); color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 30px;
+    width: 30%;
+    height: 100%;
 }   
 button:hover{
     opacity: 0.9;   
