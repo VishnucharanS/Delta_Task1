@@ -44,13 +44,17 @@ button{
         height: 115px;
         font-size: 35px;
     }
-    .dark1{
-        width: 115px;
-        height: 115px;
+    .light2{
+        width: 80px;
+        height: 80px;
         font-size: 35px;
     }
     .grid4x4{
         width:480px;
+        height: 510px;
+    }
+    .grid6x6{
+        width:510px;
         height: 510px;
     }
 }
@@ -74,12 +78,15 @@ button{
         height: 115px;
         font-size: 30px;
     }
-    .dark1{
-        width: 115px;
-        height: 115px;
-        font-size: 30px;
+    .light2{
+        width:77px;
+        height:77px;
     }
     .grid4x4{
+        width:480px;
+        height: 510px;
+    }
+    .grid6x6{
         width:480px;
         height: 510px;
     }
@@ -103,11 +110,18 @@ button{
         width: 70px;
         height: 70px
     }
+    .light2{
+        width:58px;
+        height:58px;
+    }
     .grid4x4{
         width: 300px;
         height: 320px;
     }
-
+    .grid6x6{
+        width: 350px;
+        height: 380px;
+    }
 }
 .grid4x4{
     display: none;
@@ -120,6 +134,16 @@ button{
     border-spacing: 5px;
     
 }
+.grid6x6{
+    display: none;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin:auto;
+    border-radius: 2cm;
+    border-spacing: 5px;
+}
 
 .light{
     background-color:white;  
@@ -128,21 +152,12 @@ button{
 }
 .light1{
     background-color:white;  color: rgb(1, 1, 56);
-    font-family: 'Special Elite', cursive;
-    
-}
-.dark1{
-    background-color:rgb(1, 1, 56);  color:white ;
     font-family: 'Special Elite', cursive;  
 }
-/*.light1:hover{
-    background-color:rgb(1, 1, 56);
-    opacity: 0.8;
-}*/
-/*.light1:active{
-    background-color: rgb(1, 1, 56);
-    opacity: 1;
-}*/
+.light2{
+    background-color:white;  color: rgb(1, 1, 56);
+    font-family: 'Special Elite', cursive;
+}
 .dark{
     background-color:rgb(1, 1, 56); color: white;
     font-family: 'Special Elite', cursive;
@@ -151,7 +166,7 @@ button{
     background-color:rgb(1, 1, 56); color: white;
     font-family: 'Special Elite', cursive;
     font-size: 30px;
-    width: 40%;
+    width: 35%;
     height: 200%;
 }   
 button:hover{
