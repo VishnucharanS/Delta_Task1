@@ -13,8 +13,9 @@
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     text-shadow: #666;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 100px;
+    margin-top: 4cm;
 }
 .intro{
     margin: auto;
