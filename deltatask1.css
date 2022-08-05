@@ -53,6 +53,7 @@ button{
         width:480px;
         height: 510px;
         margin: auto;
+        border-spacing: 5px;
     }
     .grid6x6{
         width:510px;
@@ -92,6 +93,7 @@ button{
         width:480px;
         height: 510px;
         margin: auto;
+        border-spacing: 5px;
     }
     .grid6x6{
         width:480px;
@@ -130,6 +132,7 @@ button{
         width: 300px;
         height: 320px;
         margin: auto;
+        border-spacing: 5px;
     }
     .grid6x6{
         width: 350px;
@@ -168,6 +171,10 @@ button{
         width: 320px;
         height: 350px;
         margin-top: 2cm;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 2px;
     }
     .grid6x6{
         width: 320px;
@@ -185,9 +192,8 @@ button{
     grid-template-rows: auto auto auto auto;
     column-gap: 5px;
     row-gap: 5px;
-    margin:auto;
     border-radius: 2cm;
-    border-spacing: 5px;
+    
     
 }
 .grid6x6{
