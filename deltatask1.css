@@ -34,6 +34,9 @@ button{
     cursor:pointer;
 }
 @media screen and (min-width: 650px) {
+    #soon{
+        font-size: 75px;
+    }
     #rules{
         width: 150px;
         height: 100px;
@@ -81,6 +84,9 @@ button{
     }
 }
 @media screen and (max-width: 650px) {
+    #soon{
+        font-size: 60px;
+    }
     .intro{
         width:max-content;
         height: max-content;
@@ -127,6 +133,9 @@ button{
     }
 }
 @media screen and (max-width: 515px) {
+    #soon{
+        font-size: 43px;
+    }
     .intro{
         width:max-content;
         height: max-content;
@@ -175,6 +184,9 @@ button{
     display: none;
 }
 @media screen and (max-width: 380px) {
+    #soon{
+        font-size: 36px;
+    }
     .intro{
         width:max-content;
         height: max-content;
