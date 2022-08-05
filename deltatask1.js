@@ -2,7 +2,6 @@ var lst1 = []
 var lst2 = []
 var lst3 = []
 var k=0
-var l=0
 var clkd;
 var smid;
 var score=0;
@@ -47,6 +46,7 @@ function game(clic){
     if (lst2.length===16){
       for (let i=1;i<17;i++){
       document.getElementById("g4"+i).classList.add("right")
+      setTimeout(function(){document.getElementById(clic).classList.add("right")},400);
       }
       aud2.play();
       setTimeout(function(){
@@ -66,14 +66,16 @@ function game(clic){
         else {
           location.reload();
         }
-        },8000);
+        },7000);
     }
     glowlist()
     for (let i = 0; i<lst2.length; i++){
       lst3[i] = lst2[i]
     }
-    for (let j = 0; j < lst2.length; j++){
+    var j = 0
+    while(j<lst2.length){
       var ide= lst2[j]
+      j=j+1
       setTimeout(blackglow(ide),250); 
     } 
   }
@@ -102,10 +104,16 @@ function game(clic){
     }
     else{
       document.getElementById(smid).classList.add("wrong");
+      for (let i = 0; i<lst3.length;i++){
+        var ids=lst3[i]
+        document.getElementById("g4"+ids).classList.add("right");}
       aud1.play();
       setTimeout(function(){
       if (confirm("Want to retry?")) {
           setTimeout(function(){document.getElementById(smid).classList.remove("wrong")},0);
+          for (let i = 0; i<lst3.length;i++){
+            var ids=lst3[i]
+            document.getElementById("g4"+ids).classList.remove("right");}
         document.getElementById("4x4").style.display="grid";
         document.getElementById("start").style.display="inline";
         document.getElementById("score").style.display="none";
@@ -117,7 +125,6 @@ function game(clic){
         console.log(lst1)
         console.log(lst2)
         console.log(lst3)
-
       } 
       else {
         location.reload();

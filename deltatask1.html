@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Piano Tiles</title>
+        <audio id="audio" src="smbcoin.wav" type="audio/wav"></audio>
+        <audio id="audio1" src="smbmariodie.wav" type="audio/wav"></audio>
+        <audio id="audio2" src="smbstageclear.wav" type="audio/wav"></audio>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mouse+Memoirs">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+        <link rel="icon" type="image/x-icon" href="letterp.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h1 id="Heading">PIANO TILES<link href="deltatask1.css" rel="stylesheet"></h1>
+    <hr>
+    <br>
+    
+    <table class="intro" id="mode" style="text-align:center; ">
+        <tr >
+            <th><button class="light">           </button></th>
+            <th><button class="dark" onclick="document.getElementById('mode').style.display = 'none'; document.getElementById('level').style.display='inline'; document.getElementById('rules').style.display = 'none';"><p>Single player</p></button></th>
+            <th><button class="light">           </button></th>
+        </tr>
+        <tr> 
+            <th><button class="dark">           </button></th>
+            <th><button class="light"  onclick="document.location=''">           </button></th>
+            <th><button class="dark">           </button></th>
+        </tr>
+        <tr>
+            <th><button class="light">           </button></th>
+            <th><button class="dark" onclick="document.location='https://google.com'"><p>Multiplayer</p></button></th>
+            <th><button class="light">           </button></th>
+        </tr>   
+    </table>
+    <br>
+    <table class="intro" id="level" style="text-align:center; ">
+        <tr>
+            <th><button class="dark">           </button></th>
+            <th><button class="light" onclick="randomnes(); document.getElementById('level').style.display = 'none'; document.getElementById('start').style.display = 'inline'; document.getElementById('4x4').style.display='grid'; "><p>4x4<p>Easy</p></p></button></th>
+            <th><button class="dark">           </button></th>
+        </tr>
+        <tr> 
+            <th><button class="light">           </button></th>
+            <th><button class="dark"  onclick="document.location=''">           </button></th>
+            <th><button class="light">           </button></th>
+        </tr>
+        <tr>
+            <th><button class="dark">           </button></th>
+            <th><button class="light" onclick=" document.location='https://google.com'"><p>6x6<p>Hard</p></p></button></th>
+            <th><button class="dark">           </button></th>
+        </tr>
+    </table>
+    <div class="grid4x4" id="4x4">
+        <div class="grid-item" ><button class="light1" id="g41" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g42" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g43" onclick="game(this.id)">           </button></div>  
+        <div class="grid-item" ><button class="light1" id="g44" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g45" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g46" onclick="game(this.id)">           </button></div>  
+        <div class="grid-item" ><button class="light1" id="g47" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g48" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g49" onclick="game(this.id)">           </button></div>  
+        <div class="grid-item" ><button class="light1" id="g410" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g411" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g412" onclick="game(this.id)">           </button></div>  
+        <div class="grid-item" ><button class="light1" id="g413" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g414" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g415" onclick="game(this.id)">           </button></div>
+        <div class="grid-item" ><button class="light1" id="g416" onclick="game(this.id)">           </button></div>
+    </div>
+    <div><button id="start" class="start" onclick="start(); document.getElementById('start').style.display = 'none';document.getElementById('score').style.display = 'inline';" style="display:none;"> Click on any tile to Start</button></div>
+    <p id="score" style="font-family: 'Mouse Memoirs', cursive; font-size: 100px"></p>
+    <pre style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">
+   
+        
+        
+        
+    
+    <script src="deltatask1.js" type="text/javascript"></script>
+    <button id="rules" onclick="rules()">Rules</button>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+    </body>
+
+</html>
