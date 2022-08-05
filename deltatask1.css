@@ -52,10 +52,13 @@ button{
     .grid4x4{
         width:480px;
         height: 510px;
+        margin: auto;
     }
     .grid6x6{
         width:510px;
         height: 510px;
+        border-spacing: 5px;
+        margin: auto;
     }
     .start{
         font-size: 35px;
@@ -88,10 +91,13 @@ button{
     .grid4x4{
         width:480px;
         height: 510px;
+        margin: auto;
     }
     .grid6x6{
         width:480px;
         height: 510px;
+        border-spacing: 5px;
+        margin: auto;
     }
     .start{
         font-size: 30px;
@@ -123,10 +129,13 @@ button{
     .grid4x4{
         width: 300px;
         height: 320px;
+        margin: auto;
     }
     .grid6x6{
         width: 350px;
         height: 380px;
+        border-spacing: 5px;
+        margin: auto;
     }
     .start{
         font-size: 20px;
@@ -158,10 +167,13 @@ button{
     .grid4x4{
         width: 320px;
         height: 350px;
+        margin-top: 2cm;
     }
     .grid6x6{
         width: 320px;
         height: 350px;
+        border-spacing: 2px;
+        margin-top: 2cm;
     }
     .start{
         font-size: 20px;
@@ -184,9 +196,7 @@ button{
     grid-template-rows: auto auto auto auto auto auto;
     column-gap: 5px;
     row-gap: 5px;
-    margin:auto;
     border-radius: 2cm;
-    border-spacing: 5px;
 }
 
 .light{
