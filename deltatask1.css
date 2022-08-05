@@ -11,8 +11,8 @@
 .intro{
     margin: auto;
     border-radius: 2cm;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-spacing: 5px;
 }
 button{
@@ -38,10 +38,13 @@ button{
     border-spacing: 5px;
     
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
     /* For mobile phones: */
     [class*="light1"] {
-      width: 100%;
+      width: 90%;
+    }
+    [class*="intro"] {
+        width: 90%;
     }
   }
 .grid-item{
