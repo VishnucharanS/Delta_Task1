@@ -23,12 +23,94 @@ button{
     opacity: 0.8;
     box-shadow: 0 5px #666;
     cursor:pointer;
+}
+@media screen and (min-width: 650px) {
+    .intro{
+        width:max-content;
+        height: max-content;
+    }
+    .dark{
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+    }
+    .light{
+        width: 150px;
+        height:150px;
+        font-size: 40px;
+    }
+    .light1{
+        width: 115px;
+        height: 115px;
+        font-size: 40px;
+    }
+    .dark1{
+        width: 115px;
+        height: 115px;
+        font-size: 40px;
+    }
+    .grid4x4{
+        width:480px;
+        height: 510px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .intro{
+        width:max-content;
+        height: max-content;
+    }
+    .dark{
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+    }
+    .light{
+        width: 150px;
+        height:150px;
+        font-size: 30px;
+    }
+    .light1{
+        width: 115px;
+        height: 115px;
+        font-size: 30px;
+    }
+    .dark1{
+        width: 115px;
+        height: 115px;
+        font-size: 30px;
+    }
+    .grid4x4{
+        width:480px;
+        height: 510px;
+    }
+}
+@media screen and (max-width: 515px) {
+    .intro{
+        width:max-content;
+        height: max-content;
+    }
+    .dark{
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+    .light{
+        width: 100px;
+        height:100px;
+        font-size: 20px;
+    }
+    .light1{
+        width: 70px;
+        height: 70px
+    }
+    .grid4x4{
+        width: 300px;
+        height: 320px;
+    }
 
 }
 .grid4x4{
     display: none;
-    width:430px;
-    height: 450px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     column-gap: 5px;
@@ -38,39 +120,20 @@ button{
     border-spacing: 5px;
     
 }
-@media only screen and (max-width: 400px) {
-    /* For mobile phones: */
-    [class*="light1"] {
-      width: 90%;
-    }
-    [class*="intro"] {
-        width: 90%;
-    }
-  }
-.grid-item{
-    width: 100%;
-    height: 100%;
-    
-}
+
 .light{
     background-color:white;  
     color: rgb(1, 1, 56);
     font-family: 'Special Elite', cursive;
-    font-size: 30px;
 }
 .light1{
     background-color:white;  color: rgb(1, 1, 56);
     font-family: 'Special Elite', cursive;
-    font-size: 30px;
-    width: 100px;
-    height: 100px;
+    
 }
 .dark1{
     background-color:rgb(1, 1, 56);  color:white ;
-    font-family: 'Special Elite', cursive;
-    font-size: 30px;
-    width: 100px;
-    height: 100px;
+    font-family: 'Special Elite', cursive;  
 }
 /*.light1:hover{
     background-color:rgb(1, 1, 56);
@@ -83,14 +146,13 @@ button{
 .dark{
     background-color:rgb(1, 1, 56); color: white;
     font-family: 'Special Elite', cursive;
-    font-size: 30px;
 }   
 .start{
     background-color:rgb(1, 1, 56); color: white;
     font-family: 'Special Elite', cursive;
     font-size: 30px;
-    width: 30%;
-    height: 100%;
+    width: 40%;
+    height: 200%;
 }   
 button:hover{
     opacity: 0.9;   
