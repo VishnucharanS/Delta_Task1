@@ -28,6 +28,7 @@ button{
     .intro{
         width:max-content;
         height: max-content;
+        margin: auto;
     }
     .dark{
         width: 150px;
@@ -69,6 +70,7 @@ button{
     .intro{
         width:max-content;
         height: max-content;
+        margin: auto;
     }
     .dark{
         width: 150px;
@@ -109,6 +111,7 @@ button{
     .intro{
         width:max-content;
         height: max-content;
+        margin: auto;
     }
     .dark{
         width: 100px;
@@ -148,6 +151,10 @@ button{
     .intro{
         width:max-content;
         height: max-content;
+        margin-top: 2cm;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .dark{
         width: 90px;
