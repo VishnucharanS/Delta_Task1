@@ -8,6 +8,41 @@ var score=0;
 var aud = document.getElementById("audio")
 var aud1 =  document.getElementById("audio1")
 var aud2 =  document.getElementById("audio2")
+var mnt = 0
+var scnd = 0
+var amnt = document.getElementById("minutes")
+var ascnd = document.getElementById("seconds")
+function timer(){
+  if (scnd===59){
+    mnt+=1;
+    scnd=0
+    ascnd.innerHTML="00"
+    if (mnt<10){
+      amnt.innerHTML="0"+mnt
+    }
+    else{
+      amnt.innerHTML=""+mnt
+    }
+  }
+  else if (scnd<=8){
+    scnd+=1
+    ascnd.innerHTML="0"+scnd
+  }
+  else if (9<=scnd<=58){
+    scnd+=1
+    ascnd.innerHTML=""+scnd
+  }
+  
+}
+function starttimer(){
+  document.getElementById("time").style.display="inline"
+  t=setInterval(timer,1000)
+}
+function stoptimer(){
+  clearInterval(t)
+  mnt=0
+  scnd=0
+}
 function rules() {
   alert("General Rules: \n 1.The game is simple, you have to click on the tiles which blinks \n2. For each level there will be an increase in the number of tiles blinking \n3.The level which has all its tiles blinking is the last level \n4.You will see the specific rules of a mode once you choose the mode you want to play  ");
 }
@@ -126,11 +161,13 @@ function game(clic){
       }
     }
     else{
+      document.getElementById("score").innerHTML="Final Score:" + score
       document.getElementById(smid).classList.add("wrong");
       for (let i = 0; i<lst3.length;i++){
         var ids=lst3[i]
         document.getElementById("g4"+ids).classList.add("right");}
       aud1.play();
+
       setTimeout(function(){
       if (confirm("Want to retry?")) {
           setTimeout(function(){document.getElementById(smid).classList.remove("wrong")},0);
@@ -176,9 +213,14 @@ function game6(clic){
           for (let i=1;i<37;i++){
             document.getElementById("g6"+i).classList.remove("right")
           }
+          stoptimer()
+          document.getElementById("score").innerHTML="Final Score:" + score
           document.getElementById("6x6").style.display="grid";
           document.getElementById("start").style.display="inline";
           document.getElementById("score").style.display="none";
+          document.getElementById("time").style.display="none";
+          ascnd.innerHTML="00"
+          amnt.innerHTML="00"
           lst1=[]
           lst2=[]
           lst3=[]
@@ -192,6 +234,9 @@ function game6(clic){
     }
     else{
     glowlist()
+    if (lst1.length===35){
+      starttimer()
+    }
     for (let i = 0; i<lst2.length; i++){
       lst3[i] = lst2[i]
     }
@@ -224,6 +269,14 @@ function game6(clic){
     else{
       document.getElementById(smid).classList.add("wrong");
       document.getElementById("g6"+lst3[0]).classList.add("right")
+      if (score - mnt - scnd > 0){
+      score = score - Math.round((mnt + scnd)/5)
+      }
+      else{
+        score=0
+      }
+      stoptimer()
+      document.getElementById("score").innerHTML="Final Score:" + score
       setTimeout(function(){for (let i = 0; i<lst3.length;i++){
         var ids=lst3[i]
         document.getElementById("g6"+ids).classList.add("right");}},1000)
@@ -237,6 +290,9 @@ function game6(clic){
         document.getElementById("6x6").style.display="grid";
         document.getElementById("start6").style.display="inline";
         document.getElementById("score").style.display="none";
+        document.getElementById("time").style.display="none";
+        ascnd.innerHTML="00"
+        amnt.innerHTML="00"
         lst1=[]
         lst2=[]
         lst3=[]

@@ -8,6 +8,14 @@
     font-family: 'Mouse Memoirs', cursive;
     padding: 0px;
 }
+#soon{
+    display:none;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    text-shadow: #666;
+    color: black;
+    font-size: 100px;
+}
 .intro{
     margin: auto;
     border-radius: 2cm;
@@ -161,6 +169,9 @@ button{
     .start{
         font-size: 20px;
     }
+}
+#time{
+    display: none;
 }
 @media screen and (max-width: 380px) {
     .intro{
