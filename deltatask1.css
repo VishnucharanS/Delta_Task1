@@ -32,22 +32,22 @@ button{
     .dark{
         width: 150px;
         height: 150px;
-        font-size: 40px;
+        font-size: 35px;
     }
     .light{
         width: 150px;
         height:150px;
-        font-size: 40px;
+        font-size: 35px;
     }
     .light1{
         width: 115px;
         height: 115px;
-        font-size: 40px;
+        font-size: 35px;
     }
     .dark1{
         width: 115px;
         height: 115px;
-        font-size: 40px;
+        font-size: 35px;
     }
     .grid4x4{
         width:480px;
