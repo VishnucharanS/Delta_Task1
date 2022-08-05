@@ -57,6 +57,9 @@ button{
         width:510px;
         height: 510px;
     }
+    .start{
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 650px) {
     .intro{
@@ -90,6 +93,9 @@ button{
         width:480px;
         height: 510px;
     }
+    .start{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 515px) {
     .intro{
@@ -121,6 +127,44 @@ button{
     .grid6x6{
         width: 350px;
         height: 380px;
+    }
+    .start{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .intro{
+        width:max-content;
+        height: max-content;
+    }
+    .dark{
+        width: 90px;
+        height: 90px;
+        font-size: 20px;
+    }
+    .light{
+        width: 90px;
+        height:90px;
+        font-size: 20px;
+    }
+    .light1{
+        width: 60px;
+        height: 60px
+    }
+    .light2{
+        width:50px;
+        height:50px;
+    }
+    .grid4x4{
+        width: 320px;
+        height: 350px;
+    }
+    .grid6x6{
+        width: 320px;
+        height: 350px;
+    }
+    .start{
+        font-size: 20px;
     }
 }
 .grid4x4{
@@ -165,7 +209,6 @@ button{
 .start{
     background-color:rgb(1, 1, 56); color: white;
     font-family: 'Special Elite', cursive;
-    font-size: 30px;
     width: 35%;
     height: 200%;
 }   
