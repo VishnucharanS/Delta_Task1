@@ -15,7 +15,6 @@
     text-shadow: #666;
     color: rgb(0, 0, 0);
     font-size: 100px;
-    margin-top: 4cm;
 }
 .intro{
     margin: auto;
@@ -36,6 +35,23 @@ button{
 @media screen and (min-width: 650px) {
     #soon{
         font-size: 75px;
+        margin-top: 6cm;
+    }
+    #score6{
+        font-size: 95px;
+        display: block;
+        margin-top: 0cm;
+        margin-left: 1cm;
+        float: left;
+    }
+    #score{
+        font-size: 100px;
+    }
+    #time{
+        font-size: 95px;
+        margin-top: -1cm;
+        float: right; 
+        margin-right: 1cm;
     }
     #rules{
         width: 150px;
@@ -86,6 +102,23 @@ button{
 @media screen and (max-width: 650px) {
     #soon{
         font-size: 60px;
+        margin-top: 8cm;
+    }
+    #score6{
+        font-size: 90px;
+        display: block;
+        margin-top: 0cm;
+        margin-left: 1cm;
+        float: left;
+    }
+    #score{
+        font-size: 100px;
+    }
+    #time{
+        font-size: 90px;
+        margin-top: -1cm;
+        float: right; 
+        margin-right: 1cm;
     }
     .intro{
         width:max-content;
@@ -135,6 +168,23 @@ button{
 @media screen and (max-width: 515px) {
     #soon{
         font-size: 43px;
+        margin-top: 4cm;
+    }
+    #score6{
+        font-size: 70px;
+        display: block;
+        margin-top: 0cm;
+        margin-left: 1cm;
+        float: left;
+    }
+    #score{
+        font-size: 80px;
+    }
+    #time{
+        font-size: 70px;
+        margin-top: -1cm;
+        float: right; 
+        margin-right: 1cm;
     }
     .intro{
         width:max-content;
@@ -183,14 +233,31 @@ button{
 #time{
     display: none;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
     #soon{
         font-size: 36px;
+        margin-top: 4cm;
+    }
+    #score6{
+        font-size: 40px;
+        display: block;
+        margin-top: 0cm;
+        margin-left: 1cm;
+        float: left;
+    }
+    #score{
+        font-size: 70px;
+    }
+    #time{
+        font-size: 40px;
+        margin-top: -1cm;
+        float: right; 
+        margin-right: 1cm;
     }
     .intro{
         width:max-content;
         height: max-content;
-        margin-top: 2cm;
+        margin-top: 3cm;
         margin-bottom: auto;
         margin-left: auto;
         margin-right: auto;
@@ -215,13 +282,13 @@ button{
         height: 70px
     }
     .light2{
-        width:50px;
-        height:50px;
+        width:47px;
+        height:47px;
     }
     .grid4x4{
         width: 330px;
-        height: 370px;
-        margin-top: 2cm;
+        height: 360px;
+        margin-top: 3cm;
         margin-bottom: auto;
         margin-left: auto;
         margin-right: auto;
@@ -231,7 +298,7 @@ button{
         width: 320px;
         height: 350px;
         border-spacing: 2px;
-        margin-top: 2cm;
+        margin-top: 0cm;
     }
     .start{
         font-size: 20px;

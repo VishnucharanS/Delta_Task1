@@ -5,6 +5,7 @@ var k=0
 var clkd;
 var smid;
 var score=0;
+var score6=0;
 var aud = document.getElementById("audio")
 var aud1 =  document.getElementById("audio1")
 var aud2 =  document.getElementById("audio2")
@@ -80,6 +81,9 @@ function start6(){
 }
 function scores(){
   document.getElementById("score").innerHTML="Score: " + score
+}
+function scores6(){
+  document.getElementById("score6").innerHTML="Score: " + score6
 }
 function timeout(){
   alert("Timed out")
@@ -198,9 +202,10 @@ function game(clic){
 
 
 function game6(clic){
-  scores()
+  scores6()
   document.getElementById("start6").style.display="none";
-  document.getElementById("score").style.display="inline";
+  document.getElementById("score6").style.display="inline";
+  document.getElementById('time').style.display = 'block';
   if (lst3.length === 0){
     if (lst2.length===36){
       for (let i=1;i<37;i++){
@@ -214,17 +219,17 @@ function game6(clic){
             document.getElementById("g6"+i).classList.remove("right")
           }
           stoptimer()
-          document.getElementById("score").innerHTML="Final Score:" + score
+          document.getElementById("score6").innerHTML="Final Score:" + score
           document.getElementById("6x6").style.display="grid";
           document.getElementById("start").style.display="inline";
-          document.getElementById("score").style.display="none";
+          document.getElementById("score6").style.display="none";
           document.getElementById("time").style.display="none";
           ascnd.innerHTML="00"
           amnt.innerHTML="00"
           lst1=[]
           lst2=[]
           lst3=[]
-          score=0
+          score6=0
           randomnes6()
         } 
         else {
@@ -260,8 +265,8 @@ function game6(clic){
       document.getElementById(smid).classList.add("right");
       setTimeout(function(){document.getElementById(smid).classList.remove("right")},300);
       lst3.splice(0,1)
-      score = score + 10
-      scores()
+      score6 = score6 + 10
+      scores6()
       if (lst3.length==0){
         setTimeout(game6("g64"),400)
       }
@@ -269,14 +274,14 @@ function game6(clic){
     else{
       document.getElementById(smid).classList.add("wrong");
       document.getElementById("g6"+lst3[0]).classList.add("right")
-      if (score - mnt - scnd > 0){
-      score = score - Math.round((mnt + scnd)/5)
+      if (score6 - mnt - scnd > 0){
+      score6 = score6 - Math.round((mnt + scnd)/5)
       }
       else{
-        score=0
+        score6=0
       }
       stoptimer()
-      document.getElementById("score").innerHTML="Final Score:" + score
+      document.getElementById("score6").innerHTML="Final Score:" + score6
       setTimeout(function(){for (let i = 0; i<lst3.length;i++){
         var ids=lst3[i]
         document.getElementById("g6"+ids).classList.add("right");}},1000)
@@ -289,14 +294,14 @@ function game6(clic){
             document.getElementById("g6"+ids).classList.remove("right");}
         document.getElementById("6x6").style.display="grid";
         document.getElementById("start6").style.display="inline";
-        document.getElementById("score").style.display="none";
+        document.getElementById("score6").style.display="none";
         document.getElementById("time").style.display="none";
         ascnd.innerHTML="00"
         amnt.innerHTML="00"
         lst1=[]
         lst2=[]
         lst3=[]
-        score=0
+        score6=0
         randomnes6()
       } 
       else {
