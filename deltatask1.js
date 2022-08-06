@@ -174,10 +174,13 @@ function game(clic){
 
       setTimeout(function(){
       if (confirm("Want to retry?")) {
-          setTimeout(function(){document.getElementById(smid).classList.remove("wrong")},0);
-          for (let i = 0; i<lst3.length;i++){
-            var ids=lst3[i]
-            document.getElementById("g4"+ids).classList.remove("right");}
+        setTimeout(function(){document.getElementById(smid).classList.remove("wrong")},0);
+        for (let i = 0; i<lst3.length;i++){
+          var ids=lst3[i]
+          document.getElementById("g4"+ids).classList.remove("right");}
+        for (let i=1;i<37;i++){
+          document.getElementById("g6"+i).classList.remove("wrong")
+        }
         document.getElementById("4x4").style.display="grid";
         document.getElementById("start").style.display="inline";
         document.getElementById("score").style.display="none";
@@ -288,10 +291,14 @@ function game6(clic){
       aud1.play();
       setTimeout(function(){
       if (confirm("Want to retry?")) {
-          setTimeout(function(){document.getElementById(smid).classList.remove("wrong")},0);
-          for (let i = 0; i<lst3.length;i++){
-            var ids=lst3[i]
-            document.getElementById("g6"+ids).classList.remove("right");}
+        setTimeout(function(){document.getElementById(smid).classList.remove("wrong")},0);
+        for (let i = 0; i<lst3.length;i++){
+          var ids=lst3[i]
+          document.getElementById("g6"+ids).classList.remove("right");
+        }
+        for (let i=1;i<37;i++){
+          document.getElementById("g6"+i).classList.remove("wrong")
+        }
         document.getElementById("6x6").style.display="grid";
         document.getElementById("start6").style.display="inline";
         document.getElementById("score6").style.display="none";
