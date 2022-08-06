@@ -101,7 +101,7 @@ function glowlist(){
   lst2.push(lst1[0]);
   lst1.splice(0,1);
 }
-function game(clic){
+async function game(clic){
   scores()
   document.getElementById("start").style.display= "none";
   document.getElementById("score").style.display="inline";
@@ -141,6 +141,7 @@ function game(clic){
       var ide= lst2[j]
       j=j+1
       setTimeout(blackglow(ide),250); 
+      await wait(1000)
     } 
     }
   }
@@ -179,7 +180,7 @@ function game(clic){
           var ids=lst3[i]
           document.getElementById("g4"+ids).classList.remove("right");}
         for (let i=1;i<37;i++){
-          document.getElementById("g6"+i).classList.remove("wrong")
+          document.getElementById("g4"+i).classList.remove("wrong")
         }
         document.getElementById("4x4").style.display="grid";
         document.getElementById("start").style.display="inline";
@@ -200,11 +201,14 @@ function game(clic){
     }
   }
 }
+function wait(sec) {
+  return new Promise( resolve => {
+    setTimeout(()=> {resolve('')}, sec );
+  }
+  )
+}
 
-
-
-
-function game6(clic){
+async function game6(clic){
   scores6()
   document.getElementById("start6").style.display="none";
   document.getElementById("score6").style.display="inline";
@@ -253,6 +257,7 @@ function game6(clic){
       var ide= lst2[j]
       j=j+1
       setTimeout(blackglow6(ide),250); 
+      await wait(1000)
     } 
     }
   }
