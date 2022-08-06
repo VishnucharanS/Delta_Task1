@@ -368,6 +368,8 @@ body{
     border-radius: 0.5cm;
     opacity: 0.90;
     font-family: 'Special Elite', cursive;
+    margin-top: 1cm;
+    margin-left: -7%;
 }
 #rules:hover{
     background-color:white;  color: rgb(1, 1, 56);
