@@ -112,6 +112,7 @@ async function game(clic){
       setTimeout(function(){document.getElementById(clic).classList.add("right")},400);
       }
       aud2.play();
+      document.getElementById("score").innerHTML="Final Score:" + score
       setTimeout(function(){
         if (confirm("Woww!!!!!! You've finished it\nWanna play again?")){
           for (let i=1;i<17;i++){
@@ -152,12 +153,10 @@ async function game(clic){
     else if (smid.length===3){
       clkd = smid[2]
     }
-    console.log(clkd)
     if (lst3.includes(clkd)){
       aud.play();
       document.getElementById(smid).classList.add("right");
       setTimeout(function(){document.getElementById(smid).classList.remove("right")},300);
-      console.log(clkd)
       lst3.splice(lst3.indexOf(clkd), 1)
       score = score + 10
       scores()
@@ -172,14 +171,13 @@ async function game(clic){
         var ids=lst3[i]
         document.getElementById("g4"+ids).classList.add("right");}
       aud1.play();
-
       setTimeout(function(){
       if (confirm("Want to retry?")) {
         setTimeout(function(){document.getElementById(smid).classList.remove("wrong")},0);
         for (let i = 0; i<lst3.length;i++){
           var ids=lst3[i]
           document.getElementById("g4"+ids).classList.remove("right");}
-        for (let i=1;i<37;i++){
+        for (let i=1;i<17;i++){
           document.getElementById("g4"+i).classList.remove("wrong")
         }
         document.getElementById("4x4").style.display="grid";
@@ -190,9 +188,6 @@ async function game(clic){
         lst3=[]
         score=0
         randomnes()
-        console.log(lst1)
-        console.log(lst2)
-        console.log(lst3)
       } 
       else {
         location.reload();
@@ -220,13 +215,13 @@ async function game6(clic){
       setTimeout(function(){document.getElementById(clic).classList.add("right")},400);
       }
       aud2.play();
+      document.getElementById("score6").innerHTML="Final Score:" + score
       setTimeout(function(){
         if (confirm("Woww!!!!!! You've finished it\nWanna play again?")){
           for (let i=1;i<37;i++){
             document.getElementById("g6"+i).classList.remove("right")
           }
           stoptimer()
-          document.getElementById("score6").innerHTML="Final Score:" + score
           document.getElementById("6x6").style.display="grid";
           document.getElementById("start").style.display="inline";
           document.getElementById("score6").style.display="none";
